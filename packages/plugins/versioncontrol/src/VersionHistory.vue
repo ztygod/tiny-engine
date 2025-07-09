@@ -71,3 +71,71 @@ function showDetails(commit) {
 
 function loadMore() {}
 </script>
+
+<style lang="less" scoped>
+.version-history {
+  .commit-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 12px;
+    border-bottom: 1px solid #e5e7eb; // 浅灰色
+    cursor: pointer;
+
+    &:hover {
+      background-color: #f9fafb;
+    }
+
+    .commit-meta {
+      display: flex;
+      align-items: center;
+
+      .commit-avatar {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        margin-right: 8px;
+      }
+
+      .commit-author-info {
+        display: flex;
+        flex-direction: column;
+
+        .commit-author {
+          font-weight: bold;
+        }
+
+        .commit-date {
+          font-size: 12px;
+          color: #6b7280; // 灰色
+        }
+      }
+    }
+
+    .commit-message {
+      flex: 1;
+      margin: 0 16px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .commit-actions {
+      display: flex;
+      align-items: center;
+
+      .commit-hash {
+        font-size: 12px;
+        color: #9ca3af;
+        margin-right: 8px;
+      }
+    }
+  }
+
+  .load-more {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+  }
+}
+</style>
