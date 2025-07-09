@@ -4,5 +4,5 @@
 </template>
 
 <script setup>
-import VersionHistory from './components/VersionHistory.vue'
+import VersionHistory from './VersionHistory.vue'
 </script>
