@@ -155,6 +155,7 @@ const devAlias = {
   '@opentiny/tiny-engine-plugin-bridge': path.resolve(__dirname, '../plugins/bridge/index.js'),
   '@opentiny/tiny-engine-plugin-tutorial': path.resolve(__dirname, '../plugins/tutorial/index.js'),
   '@opentiny/tiny-engine-plugin-robot': path.resolve(__dirname, '../plugins/robot/index.js'),
+  '@opentiny/tiny-engine-plugin-version-control': path.resolve(__dirname, '../plugins/versioncontrol/index.js'),
   '@opentiny/tiny-engine-setting-events': path.resolve(__dirname, '../settings/events/index.js'),
   '@opentiny/tiny-engine-setting-props': path.resolve(__dirname, '../settings/props/index.js'),
   '@opentiny/tiny-engine-setting-styles': path.resolve(__dirname, '../settings/styles/index.js'),

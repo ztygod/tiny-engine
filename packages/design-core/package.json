@@ -53,6 +53,7 @@
     "@opentiny/tiny-engine-plugin-script": "workspace:*",
     "@opentiny/tiny-engine-plugin-tree": "workspace:*",
     "@opentiny/tiny-engine-plugin-tutorial": "workspace:*",
+    "@opentiny/tiny-engine-plugin-version-control": "woekspace:*",
     "@opentiny/tiny-engine-setting-design": "workspace:*",
     "@opentiny/tiny-engine-setting-events": "workspace:*",
     "@opentiny/tiny-engine-setting-props": "workspace:*",

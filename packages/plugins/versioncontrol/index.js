@@ -10,13 +10,12 @@
  *
  */
 
-// import component, { api } from './src/Main.vue'
+import component from './src/Main.vue'
 
 export default {
   id: 'AppVersionControl',
-  title: '版本管理'
-  // icon: 'plugin-icon-page',
-  // align: 'top',
-  // api,
-  // component
+  title: '版本管理',
+  icon: 'plugin-icon-version-control',
+  align: 'top',
+  component
 }
