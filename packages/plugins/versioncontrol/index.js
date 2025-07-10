@@ -13,7 +13,7 @@
 import component from './src/Main.vue'
 
 export default {
-  id: 'AppVersionControl',
+  id: 'VersionControl',
   title: '版本管理',
   icon: 'plugin-icon-version-control',
   align: 'top',
