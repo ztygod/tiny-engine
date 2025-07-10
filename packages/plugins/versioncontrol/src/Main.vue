@@ -11,21 +11,36 @@
       </div>
     </header>
 
-    <main class="version-control-content"></main>
+    <main class="version-control-content">
+      <tiny-input v-model="searchKey" class="plugin-version-search" placeholder="请输入关键字" type="text" clearable>
+        <template #prefix>
+          <span class="icon">
+            <svg-icon name="basic-search"></svg-icon>
+          </span>
+        </template>
+      </tiny-input>
+    </main>
   </div>
 </template>
 
 <script>
 import { LinkButton, CloseIcon } from '@opentiny/tiny-engine-common'
 import { useHelp } from '@opentiny/tiny-engine-controller'
+import { Input } from '@opentiny/vue'
+import { ref } from 'vue'
 
 export default {
   components: {
     LinkButton,
-    CloseIcon
+    CloseIcon,
+    TinyInput: Input
+    // TinyButton: Button,
+    // TinyDialog: DialogBox,
   },
   emits: ['close'],
   setup(props, { emit }) {
+    const searchKey = ref('')
+
     const docsUrl = useHelp().getDocsUrl('script')
 
     const close = () => {
@@ -34,6 +49,7 @@ export default {
 
     return {
       docsUrl,
+      searchKey,
       close
     }
   }
@@ -81,6 +97,13 @@ export default {
       margin-right: 20px;
       display: flex;
       align-items: center;
+    }
+  }
+
+  .version-control-content {
+    padding-top: 10px;
+    .plugin-version-search {
+      width: 50%;
     }
   }
 }
