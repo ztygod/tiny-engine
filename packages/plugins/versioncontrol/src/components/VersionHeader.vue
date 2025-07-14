@@ -9,7 +9,7 @@
       <!-- 分支选择器 -->
       <div class="branch-selector">
         <select v-model="modelCurrentBranch" @change="onBranchChange" class="branch-select">
-          <option v-for="branch in props.branches" :key="branch" :value="branch">
+          <option v-for="branch in propsBranches" :key="branch" :value="branch">
             {{ branch }}
           </option>
         </select>
@@ -107,6 +107,7 @@ export default {
     const createBranch = () => emit('createBranch')
 
     return {
+      propsBranches: props.branches,
       modelCurrentBranch,
       modelSearchQuery,
       docsUrl,
